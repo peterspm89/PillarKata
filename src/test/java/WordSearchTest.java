@@ -170,4 +170,22 @@ class WordSearchTest {
         assertEquals(expectedWords, wordSearch.containsWordDiagonallyAscForward());
     }
 
+    @DisplayName("9) Find words diagonally descending backwards.")
+    @Test
+    public void whenSearchingEachDiagonalRowAscBackward_AreAnyWordsPresent() {
+        /// Test if any of the diagonal rows contains one of the words we want to find.
+        /// containsWordDiagonallyForward returns a list of strings
+        // containing the names found with their coordinates.
+        /*
+        As the Puzzle Solver, I want to search diagonally ascending so that I can find words that
+        ascend along the x-axis.
+        */
+
+        /// Create the expected result.
+        final ArrayList<String> expectedWords = new ArrayList<>();
+        expectedWords.add("SULU: (3,3),(2,2),(1,1),(0,0)");
+
+        assertEquals(expectedWords, wordSearch.containsWordDiagonallyAscBackward());
+    }
+
 }
