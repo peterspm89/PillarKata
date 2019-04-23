@@ -251,6 +251,11 @@ class WordSearchTest {
 
         assertArrayEquals(expectedWords, wordSearch.getOutput());
         assertEquals(8, wordSearch.getOutput().length);
+
+        for (String s: wordSearch.getOutput()
+        ) {
+            System.out.println(s);
+        }
     }
 
 }
