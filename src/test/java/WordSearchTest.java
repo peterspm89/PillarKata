@@ -113,7 +113,7 @@ class WordSearchTest {
         assertEquals(expectedWords, wordSearch.containsWordVerticallyForward());
     }
 
-    @DisplayName("6 Find words horizontally backwards.")
+    @DisplayName("6) Find words horizontally backwards.")
     @Test
     public void whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent() {
         /// Test if any of the rows contains one of the words we want to find.
@@ -131,7 +131,7 @@ class WordSearchTest {
         assertEquals(expectedWords, wordSearch.containsWordHorizontallyBackward());
     }
 
-    @DisplayName("7 Find words vertically backwards.")
+    @DisplayName("7) Find words vertically backwards.")
     @Test
     public void whenSearchingEachColumnVerticallyBackward_AreAnyWordsPresent() {
         /// Test if any of the columns contains one of the words we want to find.
@@ -152,7 +152,7 @@ class WordSearchTest {
     /// TODO: Refactor horizontal and vertical searches to remove duplicate code.
 
 
-    @DisplayName("8 Find words diagonally ascending forwards.")
+    @DisplayName("8) Find words diagonally ascending forwards.")
     @Test
     public void whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent() {
         /// Test if any of the diagonal rows contains one of the words we want to find.
