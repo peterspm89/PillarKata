@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordSearchTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:02:48" hostname="Kriss-MacBook-Pro.local" time="0.033">
+<testsuite name="WordSearchTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:04:00" hostname="Kriss-MacBook-Pro.local" time="0.035">
   <properties/>
-  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.015"/>
+  <testcase name="whenSearchingEachColumnVerticallyBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.016"/>
+  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.003"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.004"/>
+  <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
   <testcase name="whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified()" classname="WordSearchTest" time="0.002"/>
   <testcase name="whenSearchingEachColumnVerticalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>

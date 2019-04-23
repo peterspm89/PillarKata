@@ -131,4 +131,43 @@ class WordSearchTest {
         assertEquals(expectedWords, wordSearch.containsWordHorizontallyBackward());
     }
 
+    @DisplayName("7 Find words vertically backwards.")
+    @Test
+    public void whenSearchingEachColumnVerticallyBackward_AreAnyWordsPresent() {
+        /// Test if any of the columns contains one of the words we want to find.
+        /// containsWordHVerticallyBackward returns a list of strings
+        // containing the names found with their coordinates.
+        /*
+        As the Puzzle Solver, I want to search backwards so that I can find words in the
+        reverse along all axes.
+         */
+
+        /// Create the expected result.
+        final ArrayList<String> expectedWords = new ArrayList<>();
+        expectedWords.add("KHAN: (5,9),(5,8),(5,7),(5,6)");
+
+        assertEquals(expectedWords, wordSearch.containsWordVerticallyBackward());
+    }
+
+    /// TODO: Refactor horizontal and vertical searches to remove duplicate code.
+
+
+    @DisplayName("8 Find words diagonally ascending forwards.")
+    @Test
+    public void whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent() {
+        /// Test if any of the diagonal rows contains one of the words we want to find.
+        /// containsWordDiagonallyForward returns a list of strings
+        // containing the names found with their coordinates.
+        /*
+        As the Puzzle Solver, I want to search diagonally ascending so that I can find words that
+        ascend along the x-axis.
+        */
+
+        /// Create the expected result.
+        final ArrayList<String> expectedWords = new ArrayList<>();
+        expectedWords.add("SPOCK: (2,1),(3,2),(4,3),(5,4),(6,5)");
+
+        assertEquals(expectedWords, wordSearch.containsWordDiagonallyAscForward());
+    }
+
 }
