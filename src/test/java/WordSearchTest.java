@@ -2,6 +2,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class WordSearchTest {
@@ -52,7 +54,7 @@ class WordSearchTest {
 
     @DisplayName("Verify initial output is empty.")
     @Test
-    public void whenWordSearchIsCreated_VerifyTheInitialOutputisEmpty() {
+    public void whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty() {
         /// My first test will simply instantiate an instance of WordSearch and
         // make sure it returns the expected list of words to find.
 
