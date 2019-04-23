@@ -96,4 +96,21 @@ class WordSearchTest {
         assertEquals(expectedWords, wordSearch.containsWordHorizontallyForward());
     }
 
+    @DisplayName("5) Find words vertically forwards.")
+    @Test
+    public void whenSearchingEachColumnVerticalForward_AreAnyWordsPresent() {
+        /// Test if any of the columns contains one of the words we want to find.
+        /// containsWordVerticallyForward returns the words found and their coordinates.
+        /*
+        As the Puzzle Solver, I want to search vertically so that I can find words on the
+        y-axis.
+         */
+
+        /// Create the expected result.
+        final ArrayList<String> expectedWords = new ArrayList<>();
+        expectedWords.add("BONES: (0,6),(0,7),(0,8),(0,9),(0,10)");
+
+        assertEquals(expectedWords, wordSearch.containsWordVerticallyForward());
+    }
+
 }
