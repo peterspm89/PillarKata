@@ -385,4 +385,86 @@ public class WordSearch {
 
         return temp;
     }
+
+    /// Returns the words found and their coordinates searching diagonally asc forward.
+    public ArrayList<String> containsWordDiagonallyAscBackward() {
+
+        /// Not sure how many words I will find, so I am using a container
+        /// that dynamically grows.
+        ArrayList<String> wordsFound = new ArrayList<>();
+
+        int index;
+        String formattedOutput;
+        String line;
+        try {
+            /// Words have to be two characters in length.
+            for (int x = this.getHeight()-1; x >= 0; x--) {
+
+                line = getDiagonalAscRowAtIndex(x, 0);
+                java.lang.StringBuilder _reverse = new java.lang.StringBuilder();
+                _reverse.append(line);
+                _reverse = _reverse.reverse();
+                line = _reverse.toString();
+
+
+                for (String word : words) {
+                    if (line.contains(word)) {
+
+                        formattedOutput = String.format("%s: ", word);
+                        index = line.indexOf(word);
+                        for (int y = 0; y < word.length(); y++) {
+
+                            formattedOutput += String.format("(%d,%d),", (this.getWidth()-index-y-1), (this.getWidth()-index-y-1));
+                        }
+
+                        /// Remove the last character in string, which is an extra comma.
+                        formattedOutput = formattedOutput.substring(0, formattedOutput.length()-1);
+                        wordsFound.add(formattedOutput);
+                    }
+                }
+
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        try {
+            /// Words have to be two characters in length.
+            for (int x = 1; x < this.getWidth(); x++) {
+
+                line = getDiagonalAscRowAtIndex(0, x);
+                java.lang.StringBuilder _reverse = new java.lang.StringBuilder();
+                _reverse.append(line);
+                _reverse = _reverse.reverse();
+                line = _reverse.toString();
+
+                for (String word : words) {
+                    if (line.contains(word)) {
+
+                        formattedOutput = String.format("%s: ", word);
+                        for (int y = 0; y < word.length(); y++) {
+
+                            formattedOutput += String.format("(%d,%d),", (this.getWidth() - y - 1), word.length() - y - 1);
+                        }
+
+                        /// Remove the last character in string, which is an extra comma.
+                        formattedOutput = formattedOutput.substring(0, formattedOutput.length() - 1);
+                        wordsFound.add(formattedOutput);
+                    }
+                }
+
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+
+        for (String s: wordsFound
+        ) {
+            output.add(s);
+        }
+
+
+        return wordsFound;
+    }
 }

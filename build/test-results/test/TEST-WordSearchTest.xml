@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordSearchTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:06:51" hostname="Kriss-MacBook-Pro.local" time="0.043">
+<testsuite name="WordSearchTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:09:51" hostname="Kriss-MacBook-Pro.local" time="0.04">
   <properties/>
-  <testcase name="whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.017"/>
+  <testcase name="whenSearchingEachDiagonalRowAscBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.015"/>
+  <testcase name="whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
   <testcase name="whenSearchingEachColumnVerticallyBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.003"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
-  <testcase name="whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.001"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachColumnVerticalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
+  <testcase name="whenSearchingEachColumnVerticalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
