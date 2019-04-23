@@ -636,4 +636,20 @@ public class WordSearch {
 
         return wordsFound;
     }
+
+    public void findAll() {
+        try {
+            containsWordVerticallyForward();
+            containsWordVerticallyBackward();
+            containsWordHorizontallyBackward();
+            containsWordHorizontallyForward();
+            containsWordDiagonallyAscForward();
+            containsWordDiagonallyAscBackward();
+            containsWordDiagonallyDescForward();
+            containsWordDiagonallyDescBackward();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
 }
