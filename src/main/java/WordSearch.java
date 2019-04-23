@@ -95,4 +95,50 @@ public class WordSearch {
         }
 
     }
+
+
+
+    /// Returns the words found and their coordinates searching horizontally forward.
+    public ArrayList<String> containsWordHorizontallyForward() {
+
+
+        /// Not sure how many words I will find, so I am using a container
+        /// that dynamically grows.
+        ArrayList<String> wordsFound = new ArrayList<String>();
+
+
+        String line;
+        int index;
+        String formattedOutput;
+        try {
+            for (int x = 0; x < this.getHeight(); x++) {
+
+                line = new String(grid[x]);
+                for (String word : words) {
+
+                    if (line.contains(word)) {
+
+                        formattedOutput = String.format("%s: ", word);
+                        index = line.indexOf(word);
+                        for (int y = 0; y < word.length(); y++) {
+
+                            formattedOutput += String.format("(%d,%d),", (index + y), x);
+                        }
+
+                        /// Remove the last character in string, which is an extra comma.
+                        formattedOutput = formattedOutput.substring(0, formattedOutput.length() - 1);
+                        wordsFound.add(formattedOutput);
+                    }
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        for (String s: wordsFound
+        ) {
+            output.add(s);
+        }
+
+        return wordsFound;
+    }
 }

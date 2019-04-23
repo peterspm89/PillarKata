@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordSearchTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-23T20:55:47" hostname="Kriss-MacBook-Pro.local" time="0.024">
+<testsuite name="WordSearchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2019-04-23T20:59:17" hostname="Kriss-MacBook-Pro.local" time="0.026">
   <properties/>
-  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.016"/>
+  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.014"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified()" classname="WordSearchTest" time="0.003"/>
+  <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.004"/>
+  <testcase name="whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified()" classname="WordSearchTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

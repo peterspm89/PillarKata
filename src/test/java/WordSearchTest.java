@@ -40,7 +40,7 @@ class WordSearchTest {
         wordSearch = new WordSearch();
     }
 
-    @DisplayName("Verify Words to find are identified.")
+    @DisplayName("1) Verify Words to find are identified.")
     @Test
     public void whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified() {
         /// My first test will simply instantiate an instance of WordSearch and
@@ -52,7 +52,7 @@ class WordSearchTest {
         assertArrayEquals(expectedWords, wordSearch.getWords());
     }
 
-    @DisplayName("Verify initial output is empty.")
+    @DisplayName("2) Verify initial output is empty.")
     @Test
     public void whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty() {
         /// My first test will simply instantiate an instance of WordSearch and
@@ -64,7 +64,7 @@ class WordSearchTest {
         assertArrayEquals(expectedWords, wordSearch.getOutput());
     }
 
-    @DisplayName("Verify grid dimensions are identical.")
+    @DisplayName("3) Verify grid dimensions are identical.")
     @Test
     public void whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified() {
         /// This third test validates the dimensions of the grid from the input file.
@@ -76,6 +76,24 @@ class WordSearchTest {
 
         assertEquals(expectedDimensions, wordSearch.getHeight());
         assertEquals(expectedDimensions, wordSearch.getWidth());
+    }
+
+    @DisplayName("4) Find words horizontally forwards.")
+    @Test
+    public void whenSearchingEachRowHorizontalForward_AreAnyWordsPresent() {
+        /// Test if any of the rows contains one of the words we want to find.
+        /// containsWordHorizontallyForward has been refactored to return a list of strings
+        // containing the names found with their coordinates.
+        /*
+        As the Puzzle Solver, I want to search horizontally so that I can find words on the
+        x-axis.
+         */
+
+        /// Create the expected result.
+        final ArrayList<String> expectedWords = new ArrayList<>();
+        expectedWords.add("SCOTTY: (0,5),(1,5),(2,5),(3,5),(4,5),(5,5)");
+
+        assertEquals(expectedWords, wordSearch.containsWordHorizontallyForward());
     }
 
 }
