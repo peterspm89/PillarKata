@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordSearchTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:21:57" hostname="Kriss-MacBook-Pro.local" time="0.076">
+<testsuite name="WordSearchTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2019-04-23T21:26:11" hostname="Kriss-MacBook-Pro.local" time="0.056">
   <properties/>
-  <testcase name="whenSearchingEachDiagonalRowAscBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.022"/>
-  <testcase name="whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.005"/>
+  <testcase name="whenSearchingEachDiagonalRowAscBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.016"/>
+  <testcase name="whenSearchingEachDiagonalRowAscForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
   <testcase name="whenSearchingEachColumnVerticallyBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
-  <testcase name="whenSearchingEachDiagonalRowDescForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
-  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.004"/>
-  <testcase name="whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachDiagonalRowDescBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.003"/>
-  <testcase name="whenSearchingFinAll_AreAnyWordsPresent()" classname="WordSearchTest" time="0.01"/>
+  <testcase name="whenSearchingEachDiagonalRowDescForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenWordSearchIsCreated_VerifyTheInitialOutputIsEmpty()" classname="WordSearchTest" time="0.003"/>
+  <testcase name="whenWordSearchIsCreated_VerifyTheWordsToFindAreIdentified()" classname="WordSearchTest" time="0.001"/>
+  <testcase name="whenSearchingEachDiagonalRowDescBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenSearchingFinAll_AreAnyWordsPresent()" classname="WordSearchTest" time="0.008"/>
   <testcase name="whenSearchingEachRowHorizontalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenSearchingEachRowHorizontalBackward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.001"/>
   <testcase name="whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified()" classname="WordSearchTest" time="0.002"/>
-  <testcase name="whenSearchingEachColumnVerticalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.002"/>
+  <testcase name="whenSearchingEachColumnVerticalForward_AreAnyWordsPresent()" classname="WordSearchTest" time="0.001"/>
   <system-out><![CDATA[BONES: (0,6),(0,7),(0,8),(0,9),(0,10)
 KHAN: (5,9),(5,8),(5,7),(5,6)
 KIRK: (4,7),(3,7),(2,7),(1,7)
