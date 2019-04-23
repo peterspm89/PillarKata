@@ -50,4 +50,16 @@ class WordSearchTest {
         assertArrayEquals(expectedWords, wordSearch.getWords());
     }
 
+    @DisplayName("Verify initial output is empty.")
+    @Test
+    public void whenWordSearchIsCreated_VerifyTheInitialOutputisEmpty() {
+        /// My first test will simply instantiate an instance of WordSearch and
+        // make sure it returns the expected list of words to find.
+
+        /// Create the expected result.
+        final String[] expectedWords = new String[0];
+
+        assertArrayEquals(expectedWords, wordSearch.getOutput());
+    }
+
 }
