@@ -64,4 +64,18 @@ class WordSearchTest {
         assertArrayEquals(expectedWords, wordSearch.getOutput());
     }
 
+    @DisplayName("Verify grid dimensions are identical.")
+    @Test
+    public void whenWordSearchIsCreated_VerifyTheDimensionsOfGridAreIdentified() {
+        /// This third test validates the dimensions of the grid from the input file.
+        /// Per the kata spec, the input files will be a square, so no validation is needed.
+        /// This test assures that I am reading and initializing my grid correctly.
+
+        /// Create the expected result.
+        final int expectedDimensions = 15;
+
+        assertEquals(expectedDimensions, wordSearch.getHeight());
+        assertEquals(expectedDimensions, wordSearch.getWidth());
+    }
+
 }
